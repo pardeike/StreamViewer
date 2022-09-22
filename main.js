@@ -57,8 +57,8 @@ const createWindow = () => {
     titleBarStyle: 'hidden',
     resizable: false,
     transparent: false,
-    width: 1280,
-    height: 720,
+    width: 1338,
+    height: 752,
     webPreferences: {
       nodeIntegration: true,
       disablewebsecurity: true,

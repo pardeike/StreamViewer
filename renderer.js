@@ -1,11 +1,11 @@
 var options = {
-  width: 1280,
-  height: 720,
+  width: 1338,
+  height: 752,
   channel: "robbaz",
   transparent: true,
   allowfullscreen: true,
   layout: "video",
-  muted: false
+  muted: true
 }
 var player = new Twitch.Embed("twitch", options)
 
