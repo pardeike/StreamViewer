@@ -1,6 +1,6 @@
 var options = {
-  width: 1338,
-  height: 752,
+  width: 1342,
+  height: 754,
   channel: "robbaz",
   transparent: true,
   allowfullscreen: true,
