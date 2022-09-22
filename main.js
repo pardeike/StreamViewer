@@ -70,7 +70,8 @@ const createWindow = () => {
   win.webContents.on('before-input-event', (event, input) => {
     if (input.control) {
       const key = input.key.toLowerCase()
-      if (key === 'f') win.loadURL('https://frontend.rimionship.com')
+      if (key === '1') win.loadURL('https://registration.rimionship.com')
+      if (key === '2') win.loadURL('https://frontend.rimionship.com')
       if (key === 't') win.loadURL('https://twitch.tv')
       if (key === 'r') win.loadFile('index.html')
       if (key === 'c') win.loadFile('empty.html')
