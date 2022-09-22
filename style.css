@@ -1,0 +1,34 @@
+html,
+body,
+* {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+body {
+  background-color: black;
+}
+
+.draggable {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  -webkit-app-region: drag;
+}
+
+#streamer {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+  font: 24px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bolder;
+  z-index: 100;
+}
