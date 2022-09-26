@@ -1,7 +1,7 @@
 var options = {
   width: 1342,
   height: 754,
-  channel: "robbaz",
+  channel: "brrainz",
   transparent: true,
   allowfullscreen: true,
   layout: "video",
@@ -29,11 +29,15 @@ function handleErrors(response) {
 
 async function setStreamerId() {
   try {
-    await fetch(`https://frontend.rimionship.com/api/showstream/0/0?handler=Streamer`, {
+    // set environment variable STREAM-VIEWER-HOST to frontend.rimionship.com or localhost:5062
+    var host = window.envVars.streamViewerHost
+    if (!host) host = 'registration.rimionship.com'
+    await fetch(`https://${host}/api/showstream/0/0?handler=Streamer`, {
       method: "get"
     })
       .then(response => handleErrors(response))
       .then(async (data) => {
+        console.log(JSON.stringify(data))
         if (currentStreamer !== data.streamer) {
           currentStreamer = data.streamer
           player.setChannel(currentStreamer)

@@ -1,4 +1,4 @@
-const { app, BrowserWindow, session, powerSaveBlocker } = require('electron')
+const { app, BrowserWindow, session /*, powerSaveBlocker*/ } = require('electron')
 const path = require('path')
 
 // app.commandLine.appendSwitch('disable-gpu')

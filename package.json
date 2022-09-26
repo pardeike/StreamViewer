@@ -1,6 +1,6 @@
 {
   "name": "streamviewer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Part of Rimionship Management",
   "main": "main.js",
   "scripts": {

@@ -1,3 +1,8 @@
+const { contextBridge } = require('electron')
+contextBridge.exposeInMainWorld('envVars', {
+  streamViewerHost: process.env['STREAM-VIEWER-HOST']
+})
+
 window.addEventListener('DOMContentLoaded', () => {
   // const replaceText = (selector, text) => {
   //   const element = document.getElementById(selector)
