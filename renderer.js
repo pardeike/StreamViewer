@@ -1,6 +1,6 @@
 var options = {
-  width: 1342,
-  height: 754,
+  width: 1535,
+  height: 862,
   channel: "brrainz",
   transparent: true,
   allowfullscreen: true,
